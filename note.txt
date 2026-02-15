@@ -1,0 +1,7 @@
+python -m venv venv
+venv\Scripts\activate
+
+
+const DB_NAME = "markdown-db";
+const COLLECTION = "markdown-collection";
+MONGODB_URI=mongodb://localhost:27017
