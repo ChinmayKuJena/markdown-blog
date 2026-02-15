@@ -11,7 +11,7 @@ st.set_page_config(
 @st.cache_resource
 def get_mongo_client():
     # return MongoClient("mongodb://localhost:27017")
-    return MongoClient("mongodb+srv://chinmay09jena:7f65KuqThz6rDUbU@cluster0.wtmt7.mongodb.net/")
+    return MongoClient(st.secrets["MONGO_URI"])
 
 client = get_mongo_client()
 collection = client["markdown-db"]["markdown-collection"]
